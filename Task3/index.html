@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button id="toggleMode">🌙 Dark Mode</button>
+
+<h1>🔥 API Integration Project</h1>
+
+<div class="container">
+
+  <!-- GitHub -->
+  <div class="card">
+    <h2>GitHub User</h2>
+    <input type="text" id="username" placeholder="Enter username">
+    <button onclick="getGitHub()">Search</button>
+    <div id="githubResult"></div>
+    <div id="repoList"></div>
+  </div>
+
+  <!-- Weather -->
+  <div class="card">
+    <h2>Weather</h2>
+    <input type="text" id="city" placeholder="Enter city">
+    <button onclick="getWeather()">Search</button>
+    <div id="weatherResult"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
