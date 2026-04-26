@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Landing Page</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <h2 class="logo">CodeSite</h2>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Build Responsive Websites</h1>
+    <p>Modern UI • Fast • Clean Design</p>
+    <button onclick="scrollToSection('features')">Get Started</button>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="features" class="features">
+  <h2 data-aos="fade-up">Our Features</h2>
+  <div class="feature-container">
+    <div class="card" data-aos="zoom-in">
+      <h3>Responsive</h3>
+      <p>Works on all devices</p>
+    </div>
+    <div class="card" data-aos="zoom-in" data-aos-delay="100">
+      <h3>Fast</h3>
+      <p>Optimized performance</p>
+    </div>
+    <div class="card" data-aos="zoom-in" data-aos-delay="200">
+      <h3>Modern</h3>
+      <p>Glassmorphism UI design</p>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about" data-aos="fade-up">
+  <h2>About Us</h2>
+  <p>This project demonstrates a modern responsive landing page using HTML, CSS, JavaScript and animations.</p>
+</section>
+
+<!-- Contact Form -->
+<section class="contact" id="contact" data-aos="fade-up">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="formMsg"></p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 CodeSite | All Rights Reserved</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
